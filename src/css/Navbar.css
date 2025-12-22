@@ -1,0 +1,64 @@
+.nav-containter {
+    background-color: #EAF2EC;
+    padding: 1.9rem;
+    padding-left: 6rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 9rem; /* espacio entre elementos */
+    list-style: none;
+    position: relative;
+}
+
+/*estilos para el anchor*/
+.anchor-nav {
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 0.25rem;
+    letter-spacing: -0.02em;
+    padding: 0.25rem 0.4rem;
+}
+
+/*estilo para el logo*/
+.brand-logo {
+  height: 95px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  position: absolute; 
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 0;
+}
+
+/* estilos para el carro de compra */
+.cart-widget {
+  display: flex;
+  align-items: center; 
+  margin-left: 0.6rem;
+}
+
+.cart-icon {
+  font-size: 2.2rem; 
+  color: black;
+  cursor: pointer; 
+}
+
+/*probando idea para el boton------- esto deberia ir 
+aparte con otro CSS que se llame ItemListContainer, confirmar con la profe*/
+.btn.btn-aventum {
+  background-color: #365E3A;
+  border-color: #365E3A;
+  color: #fff;
+}
+
+.btn.btn-aventum:hover {
+  background-color: #2f5233;
+  border-color: #2f5233;
+  color: #fff;
+}
