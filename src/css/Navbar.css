@@ -48,17 +48,3 @@
   color: black;
   cursor: pointer; 
 }
-
-/*probando idea para el boton------- esto deberia ir 
-aparte con otro CSS que se llame ItemListContainer, confirmar con la profe*/
-.btn.btn-aventum {
-  background-color: #365E3A;
-  border-color: #365E3A;
-  color: #fff;
-}
-
-.btn.btn-aventum:hover {
-  background-color: #2f5233;
-  border-color: #2f5233;
-  color: #fff;
-}
