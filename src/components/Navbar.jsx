@@ -13,7 +13,7 @@ const Navbar =() => {
                 <NavLink className='anchor-nav' to="/category/cascos">Cascos</NavLink>
                 <NavLink className='anchor-nav' to="/category/chaqueta">Chaquetas</NavLink>
                 <NavLink className='anchor-nav' to="/category/protectores">Protectores</NavLink>
-                <CartWidget/>
+                <NavLink  to="/cart"><CartWidget/></NavLink>
 
             </nav>
         

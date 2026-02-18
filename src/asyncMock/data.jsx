@@ -1,16 +1,18 @@
-const products = [
+export const products = [
+  //ya lo subi a firebase durante la penultima clase , como adicional, borre el ID del resto ya que firebase nos generara un ID
+  // recomendacion de la profe, se sube primero un primer dato y luego el resto
+  // { 
+  //   id: '001',
+  //   name: 'Casco Dark',
+  //   category: 'cascos',
+  //   price: 89990,
+  //   stock: 15,
+  //   size: ['S', 'M', 'L'],
+  //   description: 'Casco dark de microfibra',
+  //   imageUrl: 'https://i.postimg.cc/pTqk3F8d/casco1.png'
+  // },
   {
-    id: '001',
-    name: 'Casco Dark',
-    category: 'cascos',
-    price: 89990,
-    stock: 15,
-    size: ['S', 'M', 'L'],
-    description: 'Casco dark de microfibra',
-    imageUrl: 'https://i.postimg.cc/pTqk3F8d/casco1.png'
-  },
-  {
-    id: '002',
+    
     name: 'Casco Abatible Street',
     category: 'cascos',
     price: 250000,
@@ -20,7 +22,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/XJVQ28ZF/casco2.png'
   },
   {
-    id: '003',
+    
     name: 'Casco Street Beige',
     category: 'cascos',
     price: 125000,
@@ -30,17 +32,17 @@ const products = [
     imageUrl: 'https://i.postimg.cc/RFXG2HfF/casco3.png'
   },
   {
-    id: '004',
+    
     name: 'Airoh Casco Offroad',
     category: 'cascos',
     price: 280000,
     stock: 19,
     size: ['M', 'XL', 'L'],
-    description: 'Casco para enduro 2 colores - Talla L',
+    description: 'Casco para enduro 2 colores',
     imageUrl: 'https://i.postimg.cc/FRDGwLcH/casco4.png'
   },
   {
-    id: '005',
+    
     name: 'Casco Black',
     category: 'cascos',
     price: 95000,
@@ -50,7 +52,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/XJQxtCFZ/casco5.png'
   },
   {
-    id: '006',
+    
     name: 'Alpinestars Impermeable',
     category: 'chaqueta',
     price: 185000,
@@ -60,7 +62,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/63YzFvRG/chaqueta1.png'
   },
   {
-    id: '007',
+    
     name: 'Chaqueta Alpinestars Negra',
     category: 'chaqueta',
     price: 195000,
@@ -80,7 +82,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/KzJQCMLk/chaqueta3.png'
   },
   {
-    id: '009',
+   
     name: 'Chaqueta Fox Negra',
     category: 'chaqueta',
     price: 195000,
@@ -90,7 +92,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/vB3XCV95/chaqueta4.png'
   },
   {
-    id: '010',
+    
     name: 'Chaqueta Spidi Negra',
     category: 'chaqueta',
     price: 78000,
@@ -100,7 +102,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/vB3XCV9r/chaqueta5.png'
   },
   {
-    id: '011',
+    
     name: 'Botas Gaerne Naranjas',
     category: 'protectores',
     price: 380000,
@@ -110,7 +112,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/sgCjMQQG/botas_naranja.png'
   },
   {
-    id: '012',
+    
     name: 'Guantes Azules Gaerne',
     category: 'protectores',
     price: 159000,
@@ -120,7 +122,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/W1cNdFFK/guantes_azul.png'
   },
   {
-    id: '013',
+    
     name: 'Botas Negras Genericas',
     category: 'protectores',
     price: 78000,
@@ -130,7 +132,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/jS6sPxPh/botas_negras.png'
   },
   {
-    id: '014',
+    
     name: 'Guantes Black Protector',
     category: 'protectores',
     price: 48990,
@@ -140,7 +142,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/dVcshkkp/guantes_negros.png'
   },
   {
-    id: '015',
+    
     name: 'Protector Espalda Offroad',
     category: 'protectores',
     price: 98990,
@@ -150,7 +152,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/pTSxRpMz/protector_espalda.png'
   },
   {
-    id: '016',
+    
     name: 'Rodilleras Green',
     category: 'protectores',
     price: 58900,
@@ -160,7 +162,7 @@ const products = [
     imageUrl: 'https://i.postimg.cc/Y0m79Mtf/rodilleras_g.png'
   },
   {
-    id: '017',
+    
     name: 'Rodilleras Negras',
     category: 'protectores',
     price: 28900,

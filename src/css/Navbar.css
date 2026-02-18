@@ -48,3 +48,9 @@
   color: black;
   cursor: pointer; 
 }
+
+/* para que el link en CartWidget no cambie colores */
+.nav-containter a {
+  color: inherit;
+  text-decoration: none;
+}

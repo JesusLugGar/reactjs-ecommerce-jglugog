@@ -1,46 +1,76 @@
 import { useEffect, useState } from "react";
-import { getProducts } from "../asyncMock/data"
+import { getProducts, products } from "../asyncMock/data"
 import ItemList from "./ItemList";
+import Loader from "./Loader";
 import { useParams } from "react-router-dom";
+import { addDoc, collection, getDocs, where, query } from "firebase/firestore";
+import { db } from "../service/firebase"
+import BannerCarousel from "./BannerCarousel";
 
 const ItemListContainer = (props) => {
 
   const [data, setData] = useState([]);
 
+  const [loading, setLoading] = useState(false);
+
   const {type} = useParams()
 
  useEffect(() => {
+    setLoading(true);
     // siempre obtener productos; luego aplicar filtro si hay category
-    getProducts()
-      .then((products) => {
-        if (type) {
-          const filteredData = products.filter((item) => item.category === type);
-          setData(filteredData);
-        } else {
-          setData(products);
-        }
+    const prodCollection = type ? query(collection (db, "productos"), 
+        where("category", "==", type)) : collection(db, "productos")
+
+    getDocs(prodCollection)
+      .then((res) => {
+
+        const list = res.docs.map((doc) => {
+          return {
+            id: doc.id,
+            ...doc.data()
+          }
+        })
+        setData(list)
       })
-      .catch((err) => {
-        console.error("getProducts error:", err);
-        setData([]);
-      });
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, [type]);
 
 
-  /*useEffect(() => {
-    getProducts().then((data) => {
-      setData(data);
-    });
-  }, []);*/
 
-  const { tituloItem } = props;
+  //subir data a firebase//
+  {/*const subirData= () => {
+    console.log("Subiendo datos a Firebase...");
+    const colSubir = collection(db, "productos");
+    products.map((prod) => {
+      addDoc(colSubir, prod);
+    });
+  }*/}
+
+let subtitulo = '';
+
+if(type) {
+  // Capitaliza la primera letra y lo alinea a la derecha, más pequeño
+  subtitulo = `Categoría: ${type.charAt(0).toUpperCase() + type.slice(1)}`;
+}
 
   return (
-    <div className="align-items-center text-center gap-5">
-      <h1>{tituloItem}</h1>
-      
-      <ItemList data={data} />
-    </div>
+    <>
+      {loading ? (
+        <Loader />
+      ) : (
+        <div className="align-items-center text-center gap-1">
+          <BannerCarousel />
+          {/*<button onClick={subirData}>Subir datos a Firebase</button>*/}
+          {subtitulo && (
+            <div className="text-start w-100 mt-4 mb-3 ps-3">
+              <span className="text-secondary" style={{ fontSize: '1.5rem' }}>{subtitulo}</span>
+            </div>
+          )}
+          <ItemList data={data} />
+        </div>
+      )}
+    </>
   );
 };
 

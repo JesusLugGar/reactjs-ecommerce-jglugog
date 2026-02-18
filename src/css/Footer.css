@@ -1,0 +1,26 @@
+/* Footer personalizado */
+footer {
+  font-size: 1rem;
+}
+footer .fa-whatsapp {
+  color: #25d366;
+  /*height: 100%;*/
+}
+footer .fa-whatsapp:hover {
+  color: #128c7e;
+}
+
+
+/*estilo para el logo*/
+.brand-logo-footer {
+  height: 90px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+  position: absolute;
+  left: 0.4rem;
+  bottom: 0.1rem;
+  top: auto;
+  transform: none;
+  margin-left: 0;
+}
