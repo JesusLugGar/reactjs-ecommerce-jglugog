@@ -1,6 +1,6 @@
 ### ReactJS Ecommerce - App 
 
-Este proyecto fue realizado para entrega final de un Curso de React con JS en CoderHouse.
+Este proyecto de Web Ecommerce Relacionado a Accesorios de motos fue realizado para entrega final de un Curso de React con JS en CoderHouse.
 
 ![app](/public/logo4.png)
 
