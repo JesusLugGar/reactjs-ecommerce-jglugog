@@ -24,10 +24,10 @@ Si desea ver el proyecto online, puede ingresar el siguiente Link: []()
 - Integración con Firebase
 - Responsive y mobile friendly
 - Banners animados y navegación por categorías
-- Generarion de ordenes con datos cargados a una BD creada en Firebase.
+- Generacion de ordenes con datos cargados Firebase de la info del Checkout.
 
 ### Screenshots
-![Home](./public/banner1.png)
+![Home](./assets/img/banner1.png)
 ![Carrito](./public/empty_cart.png)
 
 ### Librerias utilizadas en el proyecto
