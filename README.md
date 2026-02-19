@@ -27,7 +27,7 @@ Si desea ver el proyecto online, puede ingresar el siguiente Link: []()
 - Generacion de ordenes con datos cargados Firebase de la info del Checkout.
 
 ### Screenshots
-![Home](./assets/img/banner1.png)
+![Home](./public/banner1.png)
 ![Carrito](./public/empty_cart.png)
 
 ### Librerias utilizadas en el proyecto
