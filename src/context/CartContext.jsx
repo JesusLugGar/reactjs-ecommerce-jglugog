@@ -1,11 +1,17 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 import Swal from "sweetalert2";
 
 export const CartContext = createContext();
 
+const cartLS = JSON.parse(localStorage.getItem('cart')) || [];
+
 export const CartProvider = ({ children }) => {
 
-const [cart, setCart] = useState([]);
+const [cart, setCart] = useState(cartLS);
+
+useEffect(()=> {
+    localStorage.setItem('cart', JSON.stringify(cart))
+}, [cart])
 
 
     //funcion agregar un item al carrito (ESTE SE AGREGA EN EL ITEMDETAIL componente)
@@ -38,7 +44,7 @@ const [cart, setCart] = useState([]);
                 : prod
         ))
     }
-    //borrar el carrito (se usa en el componente CART y CHECKOUT)
+
     const clearCart = () => {
         setCart([]);
     }

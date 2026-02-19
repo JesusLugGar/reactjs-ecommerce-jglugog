@@ -86,7 +86,6 @@ const ItemDetail = ({ detail }) => {
               ⭐⭐⭐⭐☆ <small className="text-muted">(34)</small>
             </div>
 
-            {/* Precio */}
             <h3 className="mt-3">{formattedPrice}</h3>
 
             {/*  TALLAS */}

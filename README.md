@@ -1,16 +1,42 @@
-# React + Vite
+### ReactJS Ecommerce - App 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto fue realizado para entrega final de un Curso de React con JS en CoderHouse.
 
-Currently, two official plugins are available:
+![app](/public/logo4.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+### Instalacion 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1. Clonar el Repositorio.
+2. Muevase a la carpeta creada con el comando `reactjs-ecommerce-jglugog`
+3. Ejecute el comando `npm install` para instalar las dependencias y crear la carpeta node_nodules.
+4. Ejecute el comando `npm run dev` para levantar el proyecto en servidor Local.
 
-## Expanding the ESLint configuration
+>Es Importante contar con una version mayor o igual a Node v22.18.0 instalado.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Version Host
+
+Si desea ver el proyecto online, puede ingresar el siguiente Link: []()
+
+### Características
+- Carrito persistente con localStorage
+- Checkout con validación y alertas
+- Integración con Firebase
+- Responsive y mobile friendly
+- Banners animados y navegación por categorías
+- Generarion de ordenes con datos cargados a una BD creada en Firebase.
+
+### Screenshots
+![Home](./public/banner1.png)
+![Carrito](./public/empty_cart.png)
+
+### Librerias utilizadas en el proyecto
+
+- [React Boostrap](https://react-bootstrap.netlify.app/): Utilizada para el styling de la App junto a CSS.
+- [React Icons](https://react-icons.github.io/react-icons/): Utilizada para los iconos.
+- [Firebase](https://firebase.google.com/?hl=es-419): Utilizada para la base de datos.
+- [React Router Dom](https://reactrouter.com/): Utilizada para la navegacion por rutas.
+- [React Spinner](https://www.davidhu.io/react-spinners/): Utilizada para mostrarr Loaders animados, Indicadores de carga.
+- [Sweetalert2](https://sweetalert2.github.io/): Utilizada para algunas alertas en la App o mensajes de Informacion.
+
+Desarrollado por JesusLugo

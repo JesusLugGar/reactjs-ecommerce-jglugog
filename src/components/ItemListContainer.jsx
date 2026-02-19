@@ -50,7 +50,7 @@ const ItemListContainer = (props) => {
 let subtitulo = '';
 
 if(type) {
-  // Capitaliza la primera letra y lo alinea a la derecha, más pequeño
+  
   subtitulo = `Categoría: ${type.charAt(0).toUpperCase() + type.slice(1)}`;
 }
 

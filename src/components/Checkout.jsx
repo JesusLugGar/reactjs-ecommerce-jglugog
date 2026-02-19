@@ -101,9 +101,10 @@ const Checkout = () => {
       ) : (
         <section className="container py-4">
           <div className="row g-4 align-items-start">
-            {/* IZQUIERDA: info usuario */}
+            {/* IZQUIERDA*/}
             <div className="col-12 col-lg-7">
               <form onSubmit={finalizarCompra}>
+
                 {/* INFORMACION DE USUARIO */}
                 <div className="border p-4 rounded mb-4 shadow">
                   <h2 className="mb-4 fs-3">1. Información de Usuario</h2>
@@ -304,7 +305,7 @@ const Checkout = () => {
               </form>
             </div>
 
-            {/* DERECHA: RESUMEN */}
+            {/* DERECHA: resumen compra */}
             <div className="col-12 col-lg-5">
               <div
                 className="border p-4 rounded shadow position-sticky"

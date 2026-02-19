@@ -1,19 +1,13 @@
-import React from 'react'
-import { useContext } from 'react';
-import { CartContext } from '../context/CartContext';
-import CartView from './CartView';
-import EmptyCart from './EmptyCart';
-
+import React from "react";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import CartView from "./CartView";
+import EmptyCart from "./EmptyCart";
 
 const CartContainer = () => {
+  const { cart } = useContext(CartContext);
 
-    const { cart } = useContext(CartContext);
+  return <>{cart.length ? <CartView /> : <EmptyCart />}</>;
+};
 
-  return (
-    <>
-      {cart.length ? <CartView /> : <EmptyCart />}
-    </>
-  )
-}
-
-export default CartContainer
+export default CartContainer;
