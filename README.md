@@ -36,7 +36,7 @@ Si desea ver el proyecto online, puede ingresar el siguiente Link: []()
 - [React Icons](https://react-icons.github.io/react-icons/): Utilizada para los iconos.
 - [Firebase](https://firebase.google.com/?hl=es-419): Utilizada para la base de datos.
 - [React Router Dom](https://reactrouter.com/): Utilizada para la navegacion por rutas.
-- [React Spinner](https://www.davidhu.io/react-spinners/): Utilizada para mostrarr Loaders animados, Indicadores de carga.
+- [React Spinner](https://www.davidhu.io/react-spinners/): Utilizada para mostrar Loaders animados, Indicadores de carga.
 - [Sweetalert2](https://sweetalert2.github.io/): Utilizada para algunas alertas en la App o mensajes de Informacion.
 
 Desarrollado por JesusLugo
