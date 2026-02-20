@@ -9,7 +9,7 @@ const CartWidget = () => {
 
   const { cart } = useContext(CartContext);
 
-  // la cantidad de productos que me apareceran en el icono con esta funcion y metodo "reduce"
+  // la cantidad de productos con metodo "reduce de JavaScript"
   const totalQuantity = cart.reduce((acc, item) => acc + item.quantity, 0);
 
   return (

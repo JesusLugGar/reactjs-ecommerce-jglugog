@@ -12,7 +12,7 @@ import Error from './components/Error'
 import Footer from "./components/Footer";
 
 function App() {
-  //const tituloItem = "Aventum";
+  
   const location = useLocation();
 
   return (

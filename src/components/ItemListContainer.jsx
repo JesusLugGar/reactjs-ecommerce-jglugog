@@ -36,21 +36,11 @@ const ItemListContainer = (props) => {
       .finally(() => setLoading(false));
   }, [type]);
 
-
-
-  //subir data a firebase//
-  {/*const subirData= () => {
-    console.log("Subiendo datos a Firebase...");
-    const colSubir = collection(db, "productos");
-    products.map((prod) => {
-      addDoc(colSubir, prod);
-    });
-  }*/}
-
-let subtitulo = '';
+  let subtitulo = '';
 
 if(type) {
-  
+
+
   subtitulo = `Categoría: ${type.charAt(0).toUpperCase() + type.slice(1)}`;
 }
 
@@ -61,7 +51,7 @@ if(type) {
       ) : (
         <div className="align-items-center text-center gap-1">
           <BannerCarousel />
-          {/*<button onClick={subirData}>Subir datos a Firebase</button>*/}
+
           {subtitulo && (
             <div className="text-start w-100 mt-4 mb-3 ps-3">
               <span className="text-secondary" style={{ fontSize: '1.5rem' }}>{subtitulo}</span>
