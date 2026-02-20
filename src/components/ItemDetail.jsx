@@ -14,7 +14,7 @@ const ItemDetail = ({ detail }) => {
 
   // aca calculo cuántos hay en el carrito de este producto y talla
   const currentInCart = cart
-    .filter((item) => item.id === detail.id)
+    .filter((item) => item.id === detail.id && item.selectedSize === selectedSize)
     .reduce((acc, item) => acc + item.quantity, 0);
 
   const stockDisponible = detail.stock - currentInCart;
@@ -126,14 +126,14 @@ const ItemDetail = ({ detail }) => {
             </p>
 
             {/* Botón / contador */}
-            <div className={!selectedSize && detail.size?.length ? "disabled-area" : currentInCart >= detail.stock ? "disabled-area" : ""}>
+            <div className={!selectedSize && detail.size?.length ? "disabled-area" : currentInCart >= stockDisponible ? "disabled-area" : ""}>
               <ItemCount 
-                stock={detail.stock} 
+                stock={stockDisponible} 
                 onAdd={onAdd} 
                 counter={counter} 
                 setCounter={setCounter} 
                 currentInCart={currentInCart} 
-                disabled={currentInCart >= detail.stock}
+                disabled={currentInCart >= stockDisponible || stockDisponible === 0}
               />
             </div>
 
