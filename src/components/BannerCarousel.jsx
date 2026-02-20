@@ -6,7 +6,7 @@ import banner4 from "../assets/img/banner4.png";
 import "../css/BannerCarousel.css";
 
 const BannerCarousel = () => (
-  <Carousel fade interval={3000}>
+  <Carousel fade interval={5000}>
     <Carousel.Item>
       <div
         className="hero-bg"
